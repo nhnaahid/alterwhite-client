@@ -7,11 +7,13 @@ import { toast } from 'react-toastify';
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
 import ButtonOne from '../../components/ButtonOne';
+import useAxiosPublic from '../../hooks/useAxiosPublic';
 
 
 const Login = () => {
-    const { loginUser, googleSignIn } = useAuth();
+    const { signIn, googleSignIn } = useAuth();
     const [showPassword, setShowPassword] = useState(true);
+    const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
@@ -23,7 +25,7 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         // console.log(email, password);
-        loginUser(email, password)
+        signIn(email, password)
             .then(result => {
                 console.log(result.user);
                 toast.success('User Login Successful.');
@@ -34,22 +36,33 @@ const Login = () => {
             })
     }
 
-    const handleLoginWithGoogle = () => {
+    const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
-                console.log(result.user);
-                toast.success('User Login Successful.');
-                navigate(from, { replace: true });
+                // console.log(result.user);
+                const userInfo = {
+                    name: result.user?.displayName,
+                    email: result.user?.email,
+                    photoURL: result.user?.photoURL,
+                }
+                axiosPublic.post('/users', userInfo)
+                    .then(res => {
+                        // console.log(res.data);
+                        if (res.data.insertedId) {
+                            toast.success('User Registration Successful.');
+                            navigate(from, { replace: true });
+                        }
+                        else {
+                            toast.success('User Login Successful.');
+                            navigate(from, { replace: true });
+                        }
+                    })
             })
-            .catch(error => {
-                toast.error(error.message);
-            })
-
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
-            <div className=" hero-content flex-col md:flex-row items-stretch mt-20">
+        <div className="hero min-h-screen">
+            <div className=" hero-content flex-col md:flex-row items-stretch mt-5">
                 <div className="w-full md:w-1/2 text-center lg:text-left rounded-2xl shadow-2xl">
                     <img className='w-full h-full rounded-2xl' src={login} alt="" />
                 </div>
@@ -88,7 +101,7 @@ const Login = () => {
                         <div className='space-y-3'>
                             <p className='text-center font-bold'>Login With</p>
                             <div className='flex items-center justify-center gap-2'>
-                                <button onClick={handleLoginWithGoogle} className="btn btn-outline text-xl px-3"><FcGoogle></FcGoogle></button>
+                                <button onClick={handleGoogleSignIn} className="btn btn-outline text-xl px-3"><FcGoogle></FcGoogle></button>
                                 <button className="btn btn-outline text-xl px-3"><FaFacebookF></FaFacebookF></button>
                                 <button className="btn btn-outline text-xl px-3"><FaGithub></FaGithub></button>
                             </div>

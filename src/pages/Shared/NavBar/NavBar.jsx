@@ -19,23 +19,22 @@ const NavBar = () => {
             })
     }
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/all-queries'>All Queries</NavLink></li>
+        <li className="ml-2"><NavLink to='/'>Home</NavLink></li>
+        <li className="ml-2"><NavLink to='/all-queries'>All Queries</NavLink></li>
         {
-            user && <NavLink to="/recommendations-for-me">Recommendations
-                For Me</NavLink>
+            user && <li className="ml-2"><NavLink to="/recommendations-for-me">Recommendations For Me</NavLink></li>
         }
         {
-            user && <NavLink to="/my-queries">My Queries</NavLink>
+            user && <li className="ml-2"><NavLink to="/my-queries">My Queries</NavLink></li>
         }
         {
-            user && <NavLink to="/my-recommendations">My recommendations</NavLink>
+            user && <li className="ml-2"><NavLink to="/my-recommendations">My recommendations</NavLink></li>
         }
     </>
 
     return (
         <nav>
-            <div className="navbar bg-base-100 shadow-md fixed z-20 px-4 sm:px-8 max-w-screen-2xl mx-auto">
+            <div className="navbar bg-gray-600 shadow-md fixed z-20 px-2 sm:px-8 max-w-screen-2xl mx-auto text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,7 +44,7 @@ const NavBar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to='/' className="text-lg md:text-3xl font-bold font-oswald"><span className="border border-black p-1 rounded-l-lg">Alter</span><span className="bg-black text-white p-1 border border-black rounded-r-lg">White</span></Link>
+                    <Link to='/' className="text-lg md:text-xl lg:text-2xl font-bold font-oswald"><span className="border border-black p-1 rounded-l-lg bg-white text-black">Alter</span><span className="bg-black text-white p-1 border border-black rounded-r-lg">White</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 md:text-base">
@@ -61,7 +60,7 @@ const NavBar = () => {
                                         <img alt="Tailwind CSS Navbar component" src={user?.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
                                     </div>
                                 </div>
-                                <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-black">
                                     <li className="text-center"><Link to="/profile">Profile</Link></li>
                                     <li className="text-center"><Link onClick={handleLogout}>Logout</Link></li>
                                 </ul>
