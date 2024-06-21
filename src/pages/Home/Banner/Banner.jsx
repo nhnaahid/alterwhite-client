@@ -32,7 +32,6 @@ const Banner = () => {
             </Swiper>
 
             <div className='absolute top-0 z-10 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-60 space-y-1 md:space-y-3'>
-            <div className='absolute top-0 z-10 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-60 space-y-1 md:space-y-2'>
                 <Slide>
                     <h1 className='font-oswald text-3xl md:text-6xl font-semibold text-white uppercase'>Welcome to AlterWhite</h1>
                 </Slide>
@@ -40,12 +39,9 @@ const Banner = () => {
                     <h1 className='text-xl md:text-3xl text-white font-merri font-semibold'>Knowledge Empowers Choices</h1>
                     <p className='text-xs md:text-base font-poppins text-gray-200 text-center font-semibold font-merri'>Discover, Compare, Decide: Your Ultimate Product Knowledge Hub</p>
                     <button className="btn btn-sm md:btn-md btn-outline text-white mt-2">Explore Now</button>
-                    <h1 className='text-xl md:text-2xl text-white'>Knowledge Empowers Choices</h1>
-                    <p className='text-xs md:text-base font-poppins  text-white text-center'>Discover, Compare, Decide: Your Ultimate Product Knowledge Hub</p>
-                    <button className="btn btn-outline text-white mt-2">Explore Now</button>
                 </Fade>
+
             </div>
-        </div>
         </div>
     );
 };
