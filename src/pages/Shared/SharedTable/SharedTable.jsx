@@ -5,7 +5,7 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 const SharedTable = ({ dataList, tableHeads, btn, myRecommendRefetch }) => {
     const axiosSecure = useAxiosSecure();
     const handleDelete = (data) => {
-        // console.log(data);
+        // console.log(data.queryId);
         Swal.fire({
             title: "Are you sure?",
             text: `Do you want to delete the recommendation.`,
@@ -20,6 +20,10 @@ const SharedTable = ({ dataList, tableHeads, btn, myRecommendRefetch }) => {
                     .then(res => {
                         if (res.data.deletedCount > 0) {
                             myRecommendRefetch();
+                            axiosSecure.put(`/queries/decrement/${data.queryId}`)
+                                .then(() => {
+                                    // console.log(res.data);
+                                })
                             Swal.fire({
                                 title: "Deleted!",
                                 text: "Your recommendation has been deleted.",
@@ -55,7 +59,8 @@ const SharedTable = ({ dataList, tableHeads, btn, myRecommendRefetch }) => {
                             <td>{data.queryProduct}</td>
                             <td>{data.recommendationTitle}</td>
                             <td>{data.recommendationProduct}</td>
-                            <td>{data.recommendationBrand}</td>
+                            {data.recommendationBrand && <td>{data.recommendationBrand}</td>}
+                            {data.recommenderName && <td>{data.recommenderName}</td>}
                             <td>
                                 <div className="avatar">
                                     <div className="mask mask-squircle w-12 h-12">

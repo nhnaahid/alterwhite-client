@@ -38,7 +38,8 @@ const QueryDetails = () => {
             queryProduct: query?.productName,
             queryUserName: query?.userName,
             queryUserImage: query?.userImage,
-            recommendationDate: new Date()
+            queryUserEmail: query?.userEmail,
+            recommendationDate: new Date().toLocaleString()
         }
         // console.log(recommendationInfo);
         axiosSecure.post('/recommendations', recommendationInfo)

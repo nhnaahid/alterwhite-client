@@ -20,6 +20,7 @@ const MyRecommend = () => {
     myRecommendations.map((recommendation) => {
         const courseInfo = {
             _id: recommendation._id,
+            queryId: recommendation.queryId,
             queryTitle: recommendation.queryTitle,
             queryProduct: recommendation.queryProduct,
             recommendationTitle: recommendation.recommendationTitle,

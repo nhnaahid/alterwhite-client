@@ -23,7 +23,7 @@ const AddQueries = () => {
             userEmail: user.email,
             userImage: user.photoURL,
             recommendationCount: 0,
-            date: new Date()
+            date: new Date().toLocaleString()
         }
         // console.log("from: ", queryInfo);
         axiosSecure.post('/queries', queryInfo)
