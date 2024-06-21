@@ -8,6 +8,8 @@ import PrivateRoute from "./PrivateRoute";
 import AddQueries from "../pages/AddQueries/AddQueries";
 import AllQueries from "../pages/AllQueries/AllQueries";
 import QueryDetails from "../pages/QueryDetails/QueryDetails";
+import MyRecommend from "../pages/MyRecommend/MyRecommend";
+import RecommendForMe from "../pages/RecommendForMe/RecommendForMe";
 
 const router = createBrowserRouter([
     {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
                 path: "/add-queries",
                 element: <PrivateRoute><AddQueries></AddQueries></PrivateRoute>
             },
+            {
+                path: "/my-recommendations",
+                element: <PrivateRoute><MyRecommend></MyRecommend></PrivateRoute>
+            },
+            {
+                path: "/recommendations-for-me",
+                element: <PrivateRoute><RecommendForMe></RecommendForMe></PrivateRoute>
+            }
 
         ]
     },

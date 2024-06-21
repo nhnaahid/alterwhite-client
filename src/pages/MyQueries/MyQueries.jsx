@@ -1,4 +1,4 @@
-import cover from '../../assets/cover2.jpg'
+import cover from '../../assets/cover.jpg'
 import { Link } from 'react-router-dom';
 import banner from '../../assets/banner2.jpg'
 import useAxiosSecure from '../../hooks/useAxiosSecure';
