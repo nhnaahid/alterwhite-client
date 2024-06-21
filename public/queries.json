@@ -1,0 +1,93 @@
+[
+    {
+      "productName": "iPhone 13",
+      "productBrand": "Apple",
+      "queryTitle": "Looking for a more affordable alternative to iPhone 13",
+      "reasonOfAlternation": "While I appreciate the features and performance of the iPhone 13, the high price point is a significant barrier for me. I'm looking for a smartphone that offers similar capabilities, such as a high-quality camera, fast processing speed, and a good display, but at a more affordable price. Additionally, I would prefer a device that receives regular software updates and has a strong build quality to ensure durability over time."
+    },
+    {
+      "productName": "Nike Air Max 270",
+      "productBrand": "Nike",
+      "queryTitle": "Seeking a durable running shoe alternative to Nike Air Max 270",
+      "reasonOfAlternation": "The Nike Air Max 270 is stylish and comfortable, but I have concerns about its long-term durability, especially for extensive running. I'm looking for an alternative that can withstand frequent and intensive use without compromising on comfort. It's important that the shoe provides good support, has a durable sole, and is made from high-quality materials to ensure it lasts longer. Additionally, a more budget-friendly option would be appreciated."
+    },
+    {
+      "productName": "MacBook Pro",
+      "productBrand": "Apple",
+      "queryTitle": "Need a Windows laptop similar to MacBook Pro",
+      "reasonOfAlternation": "I need a Windows laptop that matches the performance and build quality of the MacBook Pro, as some of the software I use is not compatible with macOS. Ideally, the laptop should have a powerful processor, high-resolution display, and robust build. Long battery life and good customer support are also important factors. It would be great to find something that balances these features with a reasonable price point, as the MacBook Pro is quite expensive."
+    },
+    {
+      "productName": "Sony WH-1000XM4",
+      "productBrand": "Sony",
+      "queryTitle": "Looking for a cheaper alternative to Sony WH-1000XM4",
+      "reasonOfAlternation": "I love the noise-canceling feature and sound quality of the Sony WH-1000XM4, but the price is a bit steep for my budget. I'm searching for headphones that provide similar noise cancellation and audio performance but at a more affordable price. Comfort for long-term use and good battery life are also important considerations for me, as I often use headphones for extended periods."
+    },
+    {
+      "productName": "Dyson V11",
+      "productBrand": "Dyson",
+      "queryTitle": "Need a budget-friendly vacuum cleaner like Dyson V11",
+      "reasonOfAlternation": "The Dyson V11 offers excellent cleaning performance and versatility, but it is quite expensive. I'm looking for a vacuum cleaner that delivers similar powerful suction and adaptability for different floor types without breaking the bank. Ease of use, lightweight design, and a good battery life for cordless models are also key factors. Additionally, a vacuum with easy maintenance and good customer support would be ideal."
+    },
+    {
+      "productName": "Samsung Galaxy S21",
+      "productBrand": "Samsung",
+      "queryTitle": "Seeking an alternative to Samsung Galaxy S21 with a better battery life",
+      "reasonOfAlternation": "The Samsung Galaxy S21 has impressive features and performance, but its battery life doesn't meet my needs for heavy daily use. I need a smartphone with a longer-lasting battery that can handle extensive usage without frequent recharging. It should also have a good camera, fast processing speed, and a high-quality display. If possible, I would like to find a phone that offers these features at a competitive price."
+    },
+    {
+      "productName": "Kindle Paperwhite",
+      "productBrand": "Amazon",
+      "queryTitle": "Looking for an e-reader alternative to Kindle Paperwhite",
+      "reasonOfAlternation": "The Kindle Paperwhite is a great e-reader, but its limited format support can be frustrating, especially for reading various document types. I'm searching for an e-reader that supports a wider range of file formats and offers a similar reading experience. Key features I'm looking for include a high-resolution screen, adjustable lighting for reading in different environments, and a long battery life. Affordability and ease of use are also important."
+    },
+    {
+      "productName": "Fitbit Charge 4",
+      "productBrand": "Fitbit",
+      "queryTitle": "Need a fitness tracker alternative to Fitbit Charge 4 with longer battery",
+      "reasonOfAlternation": "The Fitbit Charge 4 is a solid fitness tracker, but its battery life falls short, especially with continuous GPS usage. I'm in search of a fitness tracker that offers a significantly longer battery life while providing similar health and fitness tracking features. It should be comfortable to wear, have accurate sensors, and offer good app integration. A reasonable price and good customer support are also important considerations."
+    },
+    {
+      "productName": "Nest Learning Thermostat",
+      "productBrand": "Google",
+      "queryTitle": "Seeking a smart thermostat alternative to Nest Learning Thermostat",
+      "reasonOfAlternation": "While the Nest Learning Thermostat is innovative, it doesn't work well with my HVAC system. I'm looking for a smart thermostat that offers similar energy-saving features, ease of use, and advanced control options, but is compatible with a wider range of HVAC systems. Key features include remote control via a smartphone app, learning capabilities to adapt to my schedule, and integration with smart home systems."
+    },
+    {
+      "productName": "Bose QuietComfort 35 II",
+      "productBrand": "Bose",
+      "queryTitle": "Looking for a cheaper alternative to Bose QuietComfort 35 II",
+      "reasonOfAlternation": "The Bose QuietComfort 35 II headphones offer excellent noise cancellation and sound quality, but they are quite expensive. I'm looking for a more affordable option that still provides good noise cancellation, comfortable fit for long listening sessions, and decent sound quality. Durability and good customer support are also important, as I want a pair of headphones that will last."
+    },
+    {
+      "productName": "GoPro HERO9",
+      "productBrand": "GoPro",
+      "queryTitle": "Need an action camera alternative to GoPro HERO9",
+      "reasonOfAlternation": "The GoPro HERO9 is a powerful action camera, but it tends to overheat during extended use, which is a major drawback for my needs. I'm searching for an alternative action camera that offers similar video quality, stabilization, and features, but without the overheating issues. A rugged and waterproof design is essential, and it should have good battery life to support long recording sessions."
+    },
+    {
+      "productName": "Surface Pro 7",
+      "productBrand": "Microsoft",
+      "queryTitle": "Seeking a more affordable tablet alternative to Surface Pro 7",
+      "reasonOfAlternation": "The Surface Pro 7 is versatile and powerful, but it's quite pricey. I'm looking for a more affordable tablet that can handle similar productivity tasks, such as note-taking, light graphic design, and general use. It should have a good display, responsive touchscreen, and compatibility with a stylus. Additionally, decent battery life and a solid build quality are important factors for me."
+    },
+    {
+      "productName": "Canon EOS R5",
+      "productBrand": "Canon",
+      "queryTitle": "Looking for a cheaper mirrorless camera than Canon EOS R5",
+      "reasonOfAlternation": "The Canon EOS R5 offers top-tier performance and image quality, but it is very expensive. I'm in search of a more affordable mirrorless camera that still provides excellent image quality, good autofocus, and robust build. Features like 4K video recording, a reliable lens system, and good battery life are important. I would also appreciate a camera that is lightweight and easy to carry for on-the-go photography."
+    },
+    {
+      "productName": "Peloton Bike",
+      "productBrand": "Peloton",
+      "queryTitle": "Need a budget-friendly exercise bike alternative to Peloton",
+      "reasonOfAlternation": "The Peloton Bike offers a premium exercise experience with interactive classes and a sleek design, but it is quite expensive. I'm looking for a more budget-friendly exercise bike that provides a good workout experience, adjustable resistance, and a comfortable seat. Ideally, it should also have some form of digital integration for tracking workouts and possibly offering virtual classes, but at a significantly lower price point."
+    },
+    {
+      "productName": "Apple Watch Series 6",
+      "productBrand": "Apple",
+      "queryTitle": "Looking for a smartwatch alternative to Apple Watch Series 6",
+      "reasonOfAlternation": "The Apple Watch Series 6 has great features and performance, but its battery life doesn't last as long as I need it to. I'm seeking a smartwatch with a longer battery life that can still provide health tracking, notifications, and fitness features. It should be compatible with my smartphone, have a good display, and be comfortable for all-day wear. Additionally, I would prefer something more affordable if possible."
+    }
+  ]
+  
