@@ -7,7 +7,7 @@ AOS.init();
 
 const Alternative = () => {
     return (
-        <div data-aos="fade-up" data-aos-duration="1000" className='w-full md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between gap-7 font-inter mt-24 mb-16 px-5'>
+        <div data-aos="fade-up" data-aos-duration="1000" className='w-full md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between gap-10 font-inter mt-24 mb-16 px-5'>
             {/* image */}
             <div className='w-full md:w-1/2'>
                 <img src={help} alt="Teacher" />

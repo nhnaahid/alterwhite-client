@@ -8,6 +8,8 @@ AlterWhite is an Alternative Product Information System web application designed
 ## Demo
 
 - [Live Link](https://alterwhite-507f4.web.app/)
+- user email: nahid@gmail.com
+- user pass: Nahid@123
 
 
 ## Features
