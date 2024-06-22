@@ -18,7 +18,7 @@ AlterWhite is an Alternative Product Information System web application designed
 - **Firebase Authentication:** Secure and reliable authentication using Firebase.
 - **Query Management:** Users can browse, add, update, and delete product queries.
 - **Search Functionality:** Efficient search mechanism to find queries by product name.
-- **Recommendations:** Users can view, add, and delete recommendations.
+- **Recommendations:** Users can view, add, update and delete recommendations.
 - **Responsive Design:** Optimized for various devices to ensure a seamless experience.
 - **Personalized Recommendations:** Users can view recommended products based on their added queries and recommendations.
 - **JSON Web Token (JWT) Security:** Ensures secure data transmission and authentication.
