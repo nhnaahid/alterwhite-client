@@ -1,6 +1,6 @@
 
 const Recommendation = ({ data }) => {
-    console.log(data);
+    // console.log(data);
     return (
         <div className="mt-7">
             <div className="flex items-center gap-3 p-3">

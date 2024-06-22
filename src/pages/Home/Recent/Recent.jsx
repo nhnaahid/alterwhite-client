@@ -8,7 +8,7 @@ AOS.init();
 
 const Recent = () => {
     const [queries] = useQueries('');
-    console.log(queries);
+    // console.log(queries);
     return (
         <div data-aos="fade-up" data-aos-duration="1000" className="mt-20">
             <PageHeadline headline="Recent Queries" text="Welcome to the latest insights and updates on our innovative product information system. Stay informed on the most recent advancements."></PageHeadline>

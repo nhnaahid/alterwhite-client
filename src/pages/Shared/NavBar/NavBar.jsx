@@ -7,11 +7,11 @@ import ButtonOne from "../../../components/ButtonOne";
 
 const NavBar = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
+    // console.log(user);
     const handleLogout = () => {
         logOut()
-            .then(result => {
-                console.log(result);
+            .then(() => {
+                // console.log(result);
                 toast.success('User Successfully Logged Out.');
             })
             .catch(error => {

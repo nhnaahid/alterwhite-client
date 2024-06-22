@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet-async';
 const MyQueries = () => {
     const axiosSecure = useAxiosSecure();
     const { user } = useAuth();
-    console.log(user.email);
+    // console.log(user.email);
 
     const { data: myQueries = [], refetch: myQueriesRefetch } = useQuery({
         queryKey: ['myQueries'],

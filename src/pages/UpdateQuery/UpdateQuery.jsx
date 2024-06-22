@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 const UpdateQuery = () => {
     const { id } = useParams();
-    console.log(id);
+    // console.log(id);
     const axiosSecure = useAxiosSecure();
     const [query, queryRefetch] = useOneQuery(id);
 
@@ -25,7 +25,7 @@ const UpdateQuery = () => {
             productTitle,
             productROA
         }
-        console.log(queryInfo);
+        // console.log(queryInfo);
 
         axiosSecure.patch(`/queries/update/${id}`, queryInfo)
             .then(res => {
