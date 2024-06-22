@@ -5,8 +5,6 @@ import { useQuery } from '@tanstack/react-query';
 import SharedCard from '../Shared/SharedCard/SharedCard';
 import SharedCover from '../Shared/SharedCover/SharedCover';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import ButtonTwo from '../../components/ButtonTwo';
 
 const MyQueries = () => {
     const axiosSecure = useAxiosSecure();
