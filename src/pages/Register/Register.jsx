@@ -7,6 +7,7 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -25,7 +26,7 @@ const Register = () => {
         }
 
         createUser(data.email, data.password)
-            .then((result) => {
+            .then(() => {
                 // console.log('user from sign up: ', loggedUser);
                 updateUserProfile(data.name, data.email, data.image)
                     .then(() => {
@@ -70,6 +71,9 @@ const Register = () => {
 
     return (
         <div className="my-16 ">
+            <Helmet>
+                <title>AlterWhite | Register</title>
+            </Helmet>
             <div className="w-4/5 md:w-3/5 mx-auto mt-5 p-5 shadow-2xl rounded-2xl">
                 <p className="font-semibold mb-5 text-gray-500">If you already have an account, please log in at the <Link to="/login"><span className="text-black font-bold">log in page.</span></Link></p>
                 <h1 className="border-b border-gray-300 font-oswald tracking-wide text-2xl py-2">Your Personal Details</h1>

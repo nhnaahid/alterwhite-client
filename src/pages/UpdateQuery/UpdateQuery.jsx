@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useOneQuery from "../../hooks/useOneQuery";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const UpdateQuery = () => {
     const { id } = useParams();
@@ -39,6 +40,9 @@ const UpdateQuery = () => {
 
     return (
         <div className="w-full md:w-4/5 mx-auto px-3 md:px-0 mt-12">
+            <Helmet>
+                <title>AlterWhite | Update Queries</title>
+            </Helmet>
             <h1 className="border-b border-gray-300 font-oswald tracking-wide text-2xl py-2">Update Query</h1>
             <form onSubmit={handleSubmit} className="flex flex-col space-y-2 mt-5">
                 <label>Product Name</label>

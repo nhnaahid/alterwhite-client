@@ -4,6 +4,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "../../hooks/useAuth";
 import SharedTable from "../Shared/SharedTable/SharedTable";
+import { Helmet } from "react-helmet-async";
 const MyRecommend = () => {
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
@@ -32,6 +33,9 @@ const MyRecommend = () => {
     })
     return (
         <div>
+            <Helmet>
+                <title>AlterWhite | My Recommendations</title>
+            </Helmet>
             <SharedCover
                 head="My Recommendations"
                 para="Welcome to your Recommendation section, where you are here to assist you with all the recommendations added by you to others posts."

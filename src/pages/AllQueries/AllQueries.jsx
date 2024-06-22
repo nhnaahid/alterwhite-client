@@ -4,6 +4,7 @@ import SharedCover from "../Shared/SharedCover/SharedCover";
 import SharedCard from "../Shared/SharedCard/SharedCard";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const AllQueries = () => {
     const [search, setSearch] = useState('');
@@ -17,6 +18,9 @@ const AllQueries = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>AlterWhite | All Queries</title>
+            </Helmet>
             <SharedCover
                 head="Browse Queries"
                 para="Welcome to our Alternative Product Information System! Our system is designed to offer real-time updates, comprehensive reporting, and a user-friendly interface."

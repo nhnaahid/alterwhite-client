@@ -8,6 +8,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
 import ButtonOne from '../../components/ButtonOne';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
+import { Helmet } from 'react-helmet-async';
 
 
 const Login = () => {
@@ -62,6 +63,9 @@ const Login = () => {
 
     return (
         <div className="hero min-h-screen">
+            <Helmet>
+                <title>AlterWhite | Login</title>
+            </Helmet>
             <div className=" hero-content flex-col md:flex-row items-stretch mt-5">
                 <div className="w-full md:w-1/2 text-center lg:text-left rounded-2xl shadow-2xl">
                     <img className='w-full h-full rounded-2xl' src={login} alt="" />

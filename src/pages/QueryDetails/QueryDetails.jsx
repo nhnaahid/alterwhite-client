@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import useRecommendation from "../../hooks/useRecommendation";
 import Recommendation from "../../components/Recommendation/Recommendation";
 import useOneQuery from "../../hooks/useOneQuery";
+import { Helmet } from "react-helmet-async";
 
 const QueryDetails = () => {
     const { id } = useParams();
@@ -60,6 +61,9 @@ const QueryDetails = () => {
 
     return (
         <div className="w-full md:w-4/5 mx-auto mt-12 px-2 md:px-0">
+            <Helmet>
+                <title>AlterWhite | Query Details</title>
+            </Helmet>
             <div>
                 <h1 className="text-xl md:text-3xl font-bold font-merri">{query.productTitle}</h1>
                 <div className="flex items-center gap-2 md:gap-7 pb-4 mt-5">

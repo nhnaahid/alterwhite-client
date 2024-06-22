@@ -1,11 +1,10 @@
 import cover from '../../assets/cover.jpg'
-import { Link } from 'react-router-dom';
-import banner from '../../assets/banner2.jpg'
 import useAxiosSecure from '../../hooks/useAxiosSecure';
 import useAuth from '../../hooks/useAuth';
 import { useQuery } from '@tanstack/react-query';
 import SharedCard from '../Shared/SharedCard/SharedCard';
 import SharedCover from '../Shared/SharedCover/SharedCover';
+import { Helmet } from 'react-helmet-async';
 
 const MyQueries = () => {
     const axiosSecure = useAxiosSecure();
@@ -23,6 +22,9 @@ const MyQueries = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>AlterWhite | My Queries</title>
+            </Helmet>
             <SharedCover
                 head="My Queries"
                 para="Welcome to your query section, where you are here to assist you with any inquiries you have about our alternative product information system."
