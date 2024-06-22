@@ -8,6 +8,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import banner1 from '../../../assets/slider1.jpg'
 import banner2 from '../../../assets/slider2.jpg'
 import banner3 from '../../../assets/slider3.jpg'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div className='h-[300px] md:h-dvh w-full relative'>
@@ -38,7 +39,7 @@ const Banner = () => {
                 <Fade delay={1e3} cascade damping={1e-1}>
                     <h1 className='text-xl md:text-3xl text-white font-merri font-semibold'>Knowledge Empowers Choices</h1>
                     <p className='text-xs md:text-base font-poppins text-gray-200 text-center font-semibold font-merri'>Discover, Compare, Decide: Your Ultimate Product Knowledge Hub</p>
-                    <button className="btn btn-sm md:btn-md btn-outline text-white mt-2">Explore Now</button>
+                    <Link to="/all-queries"><button className="btn btn-sm md:btn-md btn-outline text-white mt-2">Explore Now</button></Link>
                 </Fade>
 
             </div>

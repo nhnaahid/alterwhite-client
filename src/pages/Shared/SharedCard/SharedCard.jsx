@@ -3,9 +3,36 @@ import ButtonTwo from "../../../components/ButtonTwo";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 AOS.init();
 const SharedCard = ({ data, btn, myQueriesRefetch }) => {
-
+    const axiosSecure = useAxiosSecure();
+    const handleDelete = data => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: `Do you want to delete this query.`,
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Delete"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axiosSecure.delete(`/queries/delete/${data._id}`)
+                    .then(res => {
+                        if (res.data.deletedCount > 0) {
+                            myQueriesRefetch();
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your query has been deleted.",
+                                icon: "success"
+                            });
+                        }
+                    })
+            }
+        });
+    }
     return (
         <div data-aos="fade-up" data-aos-duration="1000" className="border-2 rounded-2xl hover:shadow-2xl h-full">
             <div className="flex items-center gap-3 p-3">
@@ -34,8 +61,8 @@ const SharedCard = ({ data, btn, myQueriesRefetch }) => {
             {
                 btn ?
                     <div className="flex justify-evenly items-center pb-5 text-xl">
-                        <ButtonTwo text="Update"></ButtonTwo>
-                        <ButtonTwo text="Delete"></ButtonTwo>
+                        <Link to={`/queries/update/${data._id}`}><ButtonTwo text="Update"></ButtonTwo></Link>
+                        <button onClick={() => handleDelete(data)} className="btn btn-sm btn-neutral btn-outline" >Delete</button>
                         <Link to={`/query/${data._id}`}><ButtonTwo text="View Details"></ButtonTwo></Link>
                     </div>
                     :
