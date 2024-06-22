@@ -5,6 +5,8 @@ import { useQuery } from '@tanstack/react-query';
 import SharedCard from '../Shared/SharedCard/SharedCard';
 import SharedCover from '../Shared/SharedCover/SharedCover';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import ButtonTwo from '../../components/ButtonTwo';
 
 const MyQueries = () => {
     const axiosSecure = useAxiosSecure();
@@ -32,6 +34,11 @@ const MyQueries = () => {
                 coverImage={cover}
                 url="/add-queries">
             </SharedCover>
+            {
+                !myQueries.length && <div className='text-center px-2'>
+                    <h1 className="font-bold text-2xl font-merri text-center mt-12 mb-3">No Queries Added By You.</h1>
+                </div>
+            }
             <div className='mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-2 md:px-5'>
                 {
                     myQueries.map(query => <SharedCard key={query._id} data={query} btn="yes" myQueriesRefetch={myQueriesRefetch}></SharedCard>)
