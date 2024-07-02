@@ -8,7 +8,7 @@ AlterWhite is an Alternative Product Information System web application designed
 ## Demo
 
 - [Live Link](https://alterwhite-507f4.web.app/)
-- [Server Side Repo] (https://github.com/nhnaahid/alterwhite-server)
+- [Server Side Repo](https://github.com/nhnaahid/alterwhite-server)
 - user email: nahid@gmail.com
 - user pass: Nahid@123
 
@@ -97,7 +97,6 @@ Once the server and client are running, open your web browser and go to `http://
 - **Responsive Design:** Optimized for various devices to ensure a seamless experience.
 - **Personalized Recommendations:** Users can view recommended products based on their added queries and recommendations.
 - **JSON Web Token (JWT) Security:** Ensures secure data transmission, authentication and authorization.
-- **Aesthetic Design:** Modern and appealing design to enhance user interaction.
 
 
 ## Tech Stack
