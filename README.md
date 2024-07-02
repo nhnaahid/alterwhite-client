@@ -87,14 +87,14 @@ Please follow their docs to integrate firebase authentication, create and store 
 Once the server and client are running, open your web browser and go to `http://localhost:5173` to view the application.
 
 
-## Features
+## Key Features
 
 - **User Profile Management:** Users can create Account.
 - **Firebase Authentication:** Secure and reliable authentication using Firebase.
 - **Query Management:** Users can browse, add, update, and delete product queries.
 - **Search Functionality:** Efficient search mechanism to find queries by product name.
 - **Recommendations:** Users can view, add, update and delete recommendations.
-- **Responsive Design:** Optimized for various devices to ensure a seamless experience.
+- **Responsive Design:** Optimized for various devices (Mobile, Tablet, Laptop etc.) to ensure a seamless experience.
 - **Personalized Recommendations:** Users can view recommended products based on their added queries and recommendations.
 - **JSON Web Token (JWT) Security:** Ensures secure data transmission, authentication and authorization.
 
